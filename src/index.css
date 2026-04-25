@@ -1,0 +1,268 @@
+/* MAP Advertisers — Premium glassmorphism design system. All colors HSL. */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand surface — deep navy */
+    --background: 230 47% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 230 35% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 230 40% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Brand colors lifted from logo */
+    --primary: 195 100% 50%;            /* cyan */
+    --primary-foreground: 230 47% 6%;
+    --primary-glow: 195 100% 65%;
+
+    --secondary: 326 100% 50%;          /* magenta */
+    --secondary-foreground: 0 0% 100%;
+
+    --highlight: 51 100% 50%;           /* yellow */
+    --highlight-foreground: 230 47% 6%;
+
+    /* Editorial gold — premium accent */
+    --gold: 43 74% 56%;
+    --gold-foreground: 230 47% 6%;
+
+    --muted: 230 25% 14%;
+    --muted-foreground: 220 15% 70%;
+
+    --accent: 326 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 30% 20%;
+    --input: 230 30% 16%;
+    --ring: 195 100% 50%;
+
+    --radius: 1rem;
+
+    /* Glass tokens */
+    --glass: 230 30% 100% / 0.06;
+    --glass-border: 0 0% 100% / 0.12;
+
+    /* Gradients */
+    --gradient-brand: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(326 100% 50%) 60%, hsl(51 100% 55%) 100%);
+    --gradient-cyan-magenta: linear-gradient(135deg, hsl(195 100% 50%), hsl(326 100% 50%));
+    --gradient-magenta-yellow: linear-gradient(135deg, hsl(326 100% 50%), hsl(51 100% 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 74% 70%) 0%, hsl(43 74% 50%) 50%, hsl(38 74% 40%) 100%);
+    --gradient-radial: radial-gradient(ellipse at top, hsl(195 100% 50% / 0.25), transparent 60%),
+                       radial-gradient(ellipse at bottom right, hsl(326 100% 50% / 0.25), transparent 60%);
+    --gradient-text: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(195 100% 75%) 50%, hsl(326 100% 75%) 100%);
+    --gradient-editorial: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(43 74% 75%) 60%, hsl(43 74% 56%) 100%);
+
+    /* Shadows */
+    --shadow-glow-cyan: 0 0 60px -10px hsl(195 100% 50% / 0.6);
+    --shadow-glow-magenta: 0 0 60px -10px hsl(326 100% 50% / 0.5);
+    --shadow-elegant: 0 30px 80px -20px hsl(230 80% 5% / 0.7);
+    --shadow-card: 0 20px 50px -20px hsl(230 80% 2% / 0.6);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 230 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 230 35% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 230 40% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 230 47% 6%;
+    --secondary: 326 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 230 25% 14%;
+    --muted-foreground: 220 15% 70%;
+    --accent: 326 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 230 30% 20%;
+    --input: 230 30% 16%;
+    --ring: 195 100% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Sora', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: hsl(var(--secondary) / 0.4);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: hsl(0 0% 100% / 0.04);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.08);
+  }
+  .glass-strong {
+    background: hsl(0 0% 100% / 0.08);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.14);
+  }
+  .text-gradient-brand {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-soft {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-gradient-brand { background: var(--gradient-brand); }
+  .bg-gradient-cm { background: var(--gradient-cyan-magenta); }
+  .bg-gradient-my { background: var(--gradient-magenta-yellow); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-radial-brand { background: var(--gradient-radial); }
+  .text-gradient-editorial {
+    background: var(--gradient-editorial);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .shadow-glow-cyan { box-shadow: var(--shadow-glow-cyan); }
+  .shadow-glow-magenta { box-shadow: var(--shadow-glow-magenta); }
+  .shadow-glow-gold { box-shadow: 0 0 60px -10px hsl(43 74% 56% / 0.55); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+
+  .grid-pattern {
+    background-image:
+      linear-gradient(hsl(0 0% 100% / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(0 0% 100% / 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Hairline noise overlay — adds editorial film grain */
+  .noise-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  /* Editorial vertical writing for accent badges */
+  .vertical-rl { writing-mode: vertical-rl; }
+}
+
+/* === Icon system: consistent stroke across the entire site ===
+   All Lucide icons render with a unified 1.75 stroke for a refined,
+   premium feel. Override per-icon via inline strokeWidth when needed. */
+@layer base {
+  svg.lucide {
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+/* === Performance: respect reduced-motion + tame mobile animations ===
+   Cuts heavy blob/float/shimmer loops on small screens and for users
+   who prefer reduced motion — improves LCP & battery on mobile. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-blob,
+  .animate-float,
+  .animate-float-slow,
+  .animate-shimmer {
+    animation: none !important;
+  }
+  /* Lighter blur on mobile = much cheaper paint, better LCP */
+  .glass {
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+  }
+  .glass-strong {
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+  }
+}
+
+/* Ken-Burns slow zoom for reel previews — feels like ambient motion */
+@keyframes ken-burns {
+  0%   { transform: scale(1) translate(0, 0); }
+  50%  { transform: scale(1.12) translate(-2%, -2%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+.animate-ken-burns { animation: ken-burns 14s ease-in-out infinite; }
+
+/* Marquee — robust, isolated keyframe */
+@keyframes map-marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+.animate-marquee {
+  animation: map-marquee 45s linear infinite;
+  will-change: transform;
+}
+.animate-marquee:hover { animation-play-state: paused; }
+
+/* Subtle shine sweep across editorial cards */
+@keyframes shine-sweep {
+  0% { transform: translateX(-120%) skewX(-12deg); }
+  100% { transform: translateX(220%) skewX(-12deg); }
+}
+.animate-shine { animation: shine-sweep 5s ease-in-out infinite; }
