@@ -78,7 +78,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="pt-8 border-t border-border/60 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} MAP Advertisers. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} MAP Advertisers. All rights reserved. | <span className="font-medium text-foreground/80">Made by owaisusuf</span></p>
           <div className="flex items-center gap-6 text-xs text-muted-foreground">
             <a href="#" className="hover:text-foreground">Privacy</a>
             <a href="#" className="hover:text-foreground">Terms</a>

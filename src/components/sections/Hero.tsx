@@ -37,7 +37,7 @@ export const Hero = () => {
         <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-background" />
       </div>
 
-      <div className="container relative flex-1">
+      <div className="container relative flex-1 pb-20 md:pb-24">
         {/* Vertical EST. tag — left edge */}
         <div className="flex absolute left-2 md:left-6 xl:left-8 top-1/2 -translate-y-1/2 flex-col items-center gap-4 z-[50]">
           <div className="vertical-rl text-[11px] tracking-[0.4em] uppercase text-foreground/90 font-semibold drop-shadow-md">

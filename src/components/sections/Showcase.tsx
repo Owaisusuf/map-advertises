@@ -7,7 +7,7 @@ import rollup from "@/assets/showcase/rollup-new.jpg";
 import frost from "@/assets/showcase/frost-vinyl.jpg";
 import marriage from "@/assets/showcase/marriage-board.jpg";
 import flex from "@/assets/showcase/flex-banner-new.jpg";
-import oneway from "@/assets/showcase/one-way-vision.jpg";
+import oneway from "@/assets/showcase/one-way-vision-new.jpg";
 
 const items = [
   { title: "Highway Hoardings", tag: "Outdoor", img: hoarding, h: "h-80" },
