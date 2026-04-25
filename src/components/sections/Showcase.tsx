@@ -5,7 +5,7 @@ import lighting from "@/assets/showcase/lighting-board-new.jpg";
 import acp from "@/assets/showcase/acp-3d.jpg";
 import rollup from "@/assets/showcase/rollup-new.jpg";
 import frost from "@/assets/showcase/frost-vinyl.jpg";
-import marriage from "@/assets/showcase/marriage-board.jpg";
+import marriage from "@/assets/showcase/marriage-board-new.jpg";
 import flex from "@/assets/showcase/flex-banner-new.jpg";
 import oneway from "@/assets/showcase/one-way-vision-new.jpg";
 

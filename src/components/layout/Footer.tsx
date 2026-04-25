@@ -1,5 +1,5 @@
-import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo-transparent.png";
+import { Instagram, Facebook, Phone, Mail, MapPin, Youtube } from "lucide-react";
+import logo from "@/assets/logo-new.png";
 
 const cols = [
   {
@@ -25,7 +25,7 @@ const cols = [
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-border/60 pt-20 pb-10">
+    <footer className="border-t border-border/60 pt-12 pb-8">
       <div className="container">
         <div className="grid lg:grid-cols-5 gap-12 mb-16">
           <div className="lg:col-span-2">
@@ -40,7 +40,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <a href="mailto:designmapadvertisers@gmail.com" className="hover:text-foreground transition-colors break-all">designmapadvertisers@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=designmapadvertisers@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors break-all">designmapadvertisers@gmail.com</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
@@ -51,8 +51,11 @@ export const Footer = () => {
               <a href="https://instagram.com/mapadvertisers365" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="glass h-10 w-10 rounded-xl flex items-center justify-center hover:bg-white/10 transition-colors">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" aria-label="Facebook" className="glass h-10 w-10 rounded-xl flex items-center justify-center hover:bg-white/10 transition-colors">
+              <a href="https://www.facebook.com/share/1DafrHDWMp/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="glass h-10 w-10 rounded-xl flex items-center justify-center hover:bg-white/10 transition-colors">
                 <Facebook className="h-4 w-4" />
+              </a>
+              <a href="https://youtube.com/@mapadvertisers?si=4AuG72hs0bzxupd9" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="glass h-10 w-10 rounded-xl flex items-center justify-center hover:bg-white/10 transition-colors">
+                <Youtube className="h-4 w-4" />
               </a>
             </div>
           </div>

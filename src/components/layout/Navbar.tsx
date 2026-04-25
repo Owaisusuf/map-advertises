@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import logo from "@/assets/logo-transparent.png";
+import logo from "@/assets/logo-new.png";
 import { Button } from "@/components/ui/button";
 
 const links = [
@@ -28,7 +28,7 @@ export const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-2" : "py-4"
+        scrolled ? "py-2 bg-background/95 backdrop-blur-md border-b border-white/5 shadow-sm" : "py-4 bg-transparent"
       }`}
     >
       <div className="container">
@@ -43,7 +43,7 @@ export const Navbar = () => {
                 width={500}
                 height={500}
                 className={`relative w-auto transition-all duration-500 drop-shadow-[0_6px_24px_rgba(0,0,0,0.55)] ${
-                  scrolled ? "h-12 md:h-14" : "h-14 md:h-16"
+                  scrolled ? "h-8 md:h-10" : "h-10 md:h-12"
                 }`}
               />
             </div>

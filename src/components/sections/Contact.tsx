@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, MessageCircle, Globe, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Globe, Instagram, Facebook, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const items = [
@@ -13,7 +13,7 @@ const items = [
     icon: Mail,
     label: "Email",
     value: "designmapadvertisers@gmail.com",
-    href: "mailto:designmapadvertisers@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=designmapadvertisers@gmail.com",
   },
   {
     icon: Globe,
@@ -27,11 +27,23 @@ const items = [
     value: "@mapadvertisers365",
     href: "https://instagram.com/mapadvertisers365",
   },
+  {
+    icon: Facebook,
+    label: "Facebook",
+    value: "MAP Advertisers",
+    href: "https://www.facebook.com/share/1DafrHDWMp/",
+  },
+  {
+    icon: Youtube,
+    label: "YouTube",
+    value: "MAP Advertisers",
+    href: "https://youtube.com/@mapadvertisers?si=4AuG72hs0bzxupd9",
+  },
 ];
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-24 md:py-32 relative">
+    <section id="contact" className="py-16 md:py-24 relative">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="inline-block glass rounded-full px-4 py-1.5 text-xs font-medium mb-5">
@@ -53,7 +65,7 @@ export const Contact = () => {
               <motion.a
                 key={it.label}
                 href={it.href}
-                target={it.href.startsWith("http") ? "_blank" : undefined}
+                target={(it.href.startsWith("http") || it.href.startsWith("mailto")) ? "_blank" : undefined}
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
