@@ -82,30 +82,30 @@ export const Hero = () => {
               </span>
             </motion.div>
 
-            <h1 className="font-display font-bold tracking-[-0.04em] leading-[0.92]">
+            <h1 className="font-display font-bold tracking-[-0.02em] leading-[1.1] mb-6">
               <motion.span
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.05 }}
-                className="block text-[clamp(2.5rem,7vw,5.5rem)]"
+                className="block text-[clamp(2.2rem,5vw,4.5rem)] leading-[1.05]"
               >
-                PRECISION.
+                Printing, Signage and
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.15 }}
-                className="block text-[clamp(2.5rem,7vw,5.5rem)]"
+                className="block text-[clamp(2.2rem,5vw,4.5rem)] leading-[1.05] text-gradient-brand"
               >
-                PASSION.
+                Branding Services
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.25 }}
-                className="block text-[clamp(2.5rem,7vw,5.5rem)] text-gradient-brand"
+                className="block text-[clamp(1.5rem,3.5vw,3rem)] leading-[1.1] text-muted-foreground mt-2"
               >
-                PERFECTION.
+                in Srinagar, Kashmir
               </motion.span>
             </h1>
 
@@ -113,9 +113,9 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-8 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed uppercase tracking-wider"
+              className="mt-8 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
             >
-              Bringing your vision to life in every print. MAP Advertisers is Kashmir's full-stack creative house. One studio. 46 years of obsession with every kerning detail, every ink density, every install.
+              MAP Advertisers is a leading printing press and branding studio based in Srinagar, offering high-quality flex printing, signage, ACP boards, hoardings, and complete brand identity solutions. With over 46 years of experience, we help businesses across Kashmir stand out with premium visual communication.
             </motion.p>
 
             <motion.div
@@ -164,8 +164,8 @@ export const Hero = () => {
                 <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Brands served</p>
               </div>
               <div>
-                <p className="font-display text-2xl font-bold">24h</p>
-                <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Turnaround</p>
+                <p className="font-display text-2xl font-bold text-gradient-gold">Same Day</p>
+                <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Delivery</p>
               </div>
             </motion.div>
           </div>

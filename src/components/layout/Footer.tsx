@@ -19,6 +19,7 @@ const cols = [
       { label: "Work", href: "#work" },
       { label: "Catalog", href: "#catalog" },
       { label: "Contact", href: "#contact" },
+      { label: "FAQs", href: "/faqs-printing-srinagar" },
     ],
   },
 ];
