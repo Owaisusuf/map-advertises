@@ -160,7 +160,7 @@ export const Hero = () => {
                 <p className="mt-1.5 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">5.0 Google</p>
               </div>
               <div>
-                <p className="font-display text-2xl font-bold">3,000+</p>
+                <p className="font-display text-2xl font-bold">3,700+</p>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Brands served</p>
               </div>
               <div>
@@ -249,7 +249,7 @@ export const Hero = () => {
               </div>
               <div>
                 <p className="text-[9px] uppercase tracking-[0.22em] text-muted-foreground">Trusted by</p>
-                <p className="font-display text-sm font-semibold leading-tight">3,000+ brands</p>
+                <p className="font-display text-sm font-semibold leading-tight">3,700+ brands</p>
               </div>
             </motion.div>
           </div>

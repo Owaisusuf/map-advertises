@@ -18,23 +18,23 @@ const schema = JSON.stringify({
     "@type": "City",
     "name": "Srinagar"
   },
-  "description": "Custom logo design services in Srinagar starting at ₹999. We create unique brand identities tailored to your business vision."
+  "description": "Professional logo design services starting at ₹999. We create unique brand identities tailored to your business vision."
 });
 
 const LogoDesign = () => {
   return (
     <SEOPageLayout
-      title="Logo Design Services in Srinagar | MAP Advertisers"
-      description="Get custom logo design services in Srinagar starting at ₹999. We create unique brand identities tailored to your business vision."
+      title="Premier Logo Design Services | MAP Advertisers"
+      description="Get professional logo design services starting at ₹999. We create unique brand identities tailored to your business vision."
       schema={schema}
     >
       <div className="prose prose-invert lg:prose-xl max-w-none">
         <h1 className="text-4xl md:text-5xl font-display font-bold text-gradient-brand mb-8">
-          Logo Design Services in Srinagar
+          Premier Logo Design Services
         </h1>
         
         <p className="lead text-xl text-muted-foreground mb-8">
-          Get custom logo design services in Srinagar starting at ₹999. We create unique brand identities tailored to your business vision.
+          Get professional logo design services starting at ₹999. We create unique brand identities tailored to your business vision.
         </p>
       </div>
     </SEOPageLayout>

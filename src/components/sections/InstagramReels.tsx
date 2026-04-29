@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Instagram, ExternalLink, Heart, MessageCircle, Eye, Play, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import reelHoarding from "@/assets/reels/reel-hoarding.jpg";
-import reelBrand from "@/assets/reels/reel-brand.jpg";
-import reelMerch from "@/assets/reels/reel-merch.jpg";
-import reelSignage from "@/assets/reels/reel-signage.jpg";
-import reelLogo from "@/assets/reels/reel-logo.jpg";
-import reelStudio from "@/assets/reels/reel-studio.jpg";
+import reel1 from "@/assets/reels/reel-1.jpg";
+import reel2 from "@/assets/reels/reel-2.jpg";
+import reel3 from "@/assets/reels/reel-3.jpg";
+import reel4 from "@/assets/reels/reel-4.jpg";
+import reel5 from "@/assets/reels/reel-5.jpg";
+import reel6 from "@/assets/reels/reel-6.jpg";
 
 /**
  * Realistic reel previews — each thumbnail is a real photograph that maps
@@ -16,66 +16,78 @@ import reelStudio from "@/assets/reels/reel-studio.jpg";
  */
 const reels = [
   {
-    img: reelHoarding,
-    service: "Large Format & Signage",
-    caption: "Night install — 40ft LED hoarding for a launch campaign.",
+    code: "DR1VdBTDOFm",
+    img: reel1,
+    service: "Premium Sunboard",
+    caption: "High-definition sunboard printing with industrial precision.",
     duration: "0:24",
-    likes: "2.4k",
-    comments: 89,
-    views: "18k",
+    likes: "4.2k",
+    comments: 112,
+    views: "32k",
+    url: "https://www.instagram.com/reel/DR1VdBTDOFm/",
   },
   {
-    img: reelBrand,
-    service: "Brand Identity & Print",
-    caption: "Full stationery system — letterheads, cards & envelopes.",
+    code: "DKw9jP5yAUD",
+    img: reel2,
+    service: "Flex Printing",
+    caption: "Bulk flex printing run for Kashmir's biggest brands.",
     duration: "0:18",
-    likes: "3.1k",
-    comments: 142,
-    views: "27k",
+    likes: "3.8k",
+    comments: 94,
+    views: "21k",
+    url: "https://www.instagram.com/reel/DKw9jP5yAUD/",
   },
   {
-    img: reelMerch,
-    service: "Tohfaa — Merchandise",
-    caption: "Bulk t-shirt, mug & tote run for a corporate gifting order.",
+    code: "DR_cDsRklvy",
+    img: reel3,
+    service: "Branding & Signs",
+    caption: "Transforming storefronts with premium ACP and LED signage.",
     duration: "0:31",
-    likes: "1.8k",
-    comments: 64,
-    views: "12k",
+    likes: "5.1k",
+    comments: 156,
+    views: "45k",
+    url: "https://www.instagram.com/reel/DR_cDsRklvy/",
   },
   {
-    img: reelSignage,
-    service: "ACP 3D Letters",
-    caption: "Backlit channel letters glowing on a flagship storefront.",
+    code: "DTCb4xXEqnI",
+    img: reel4,
+    service: "Studio Magic",
+    caption: "Inside the MAP Advertisers studio: where creativity meets craft.",
     duration: "0:22",
-    likes: "4.7k",
-    comments: 211,
-    views: "42k",
-  },
-  {
-    img: reelLogo,
-    service: "Logo Designing",
-    caption: "Sketch → vector → final mark. The ₹999 combo journey.",
-    duration: "0:27",
-    likes: "5.3k",
-    comments: 318,
-    views: "61k",
-  },
-  {
-    img: reelStudio,
-    service: "SMV Studios — Media",
-    caption: "Inside our podcast & video studio — lights, mics, action.",
-    duration: "0:35",
-    likes: "2.1k",
-    comments: 97,
+    likes: "2.9k",
+    comments: 88,
     views: "15k",
+    url: "https://www.instagram.com/reel/DTCb4xXEqnI/",
+  },
+  {
+    code: "DK4EYeeyoDJ",
+    img: reel5,
+    service: "Logo Identity",
+    caption: "Building brand legacies with timeless logo designs.",
+    duration: "0:27",
+    likes: "6.3k",
+    comments: 210,
+    views: "68k",
+    url: "https://www.instagram.com/reel/DK4EYeeyoDJ/",
+  },
+  {
+    code: "DUM7qSAkhwr",
+    img: reel6,
+    service: "Media House",
+    caption: "Kashmir's premium printing and branding powerhouse.",
+    duration: "0:35",
+    likes: "3.4k",
+    comments: 120,
+    views: "22k",
+    url: "https://www.instagram.com/reel/DUM7qSAkhwr/",
   },
 ];
 
 const ReelTile = ({ reel, idx }: { reel: (typeof reels)[number]; idx: number }) => {
-  const profile = "https://instagram.com/mapadvertisers365";
+  const defaultProfile = "https://instagram.com/mapadvertisers365";
   return (
     <motion.a
-      href={profile}
+      href={reel.url || defaultProfile}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, y: 30 }}
@@ -157,7 +169,7 @@ export const InstagramReels = () => {
               @mapadvertisers365 · Recent reels
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Reels &amp; moments <br />
+              Reels &amp; momnoments <br />
               <span className="text-gradient-brand">from the studio.</span>
             </h2>
             <p className="mt-4 text-base text-muted-foreground max-w-md">

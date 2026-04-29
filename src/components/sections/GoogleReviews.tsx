@@ -70,14 +70,11 @@ export const GoogleReviews = () => {
 
         <motion.div 
           className="flex w-max gap-6 px-3"
-          animate={{ x: [0, -1000] }}
+          animate={{ x: ["0%", "-50%"] }}
           transition={{
-            x: {
-              repeat: Infinity,
-              repeatType: "loop",
-              duration: 20,
-              ease: "linear",
-            },
+            duration: 30,
+            ease: "linear",
+            repeat: Infinity,
           }}
         >
           {/* We triple the items to ensure it never visibly resets on very wide screens */}
