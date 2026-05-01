@@ -5,11 +5,20 @@ const cols = [
   {
     title: "Services",
     links: [
-      { label: "Large Format & Signage", href: "#services" },
-      { label: "Brand Identity & Print", href: "#services" },
-      { label: "Tohfaa Merchandise", href: "#services" },
-      { label: "MAP Web Studio", href: "#services" },
-      { label: "SMV Studios", href: "#services" },
+      { label: "Printing in Srinagar", href: "/printing-services-srinagar" },
+      { label: "Signage Solutions", href: "/signage-services-srinagar" },
+      { label: "Branding Agency", href: "/branding-services-srinagar" },
+      { label: "Hoarding Printing", href: "/hoarding-printing-kashmir" },
+      { label: "Logo Design", href: "/logo-design-srinagar" },
+    ],
+  },
+  {
+    title: "Locations",
+    links: [
+      { label: "Kashmir", href: "/printing-services-kashmir" },
+      { label: "Srinagar", href: "/locations/srinagar" },
+      { label: "Anantnag", href: "/printing-services-anantnag" },
+      { label: "Baramulla", href: "/printing-services-baramulla" },
     ],
   },
   {
@@ -17,9 +26,9 @@ const cols = [
     links: [
       { label: "About", href: "#about" },
       { label: "Work", href: "#work" },
-      { label: "Catalog", href: "#catalog" },
-      { label: "Contact", href: "#contact" },
+      { label: "Blog & Price Guide", href: "/blog" },
       { label: "FAQs", href: "/faqs-printing-srinagar" },
+      { label: "Contact", href: "#contact" },
     ],
   },
 ];
@@ -75,8 +84,16 @@ export const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4">Sub-brands</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>Tohfaa — Merchandise</li>
-              <li>SMV Studios — Media</li>
+              <li>
+                <a href="https://www.instagram.com/tohfaagifts/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Tohfaa — Merchandise
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/smv.studios/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  SMV Studios — Media
+                </a>
+              </li>
               <li>MAP Web Studio</li>
             </ul>
           </div>

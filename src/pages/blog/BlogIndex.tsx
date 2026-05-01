@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 import { SEOPageLayout } from "@/components/layout/SEOPageLayout";
 
 const BLOG_POSTS = [
+  { title: "Printing Cost in Srinagar: Complete Price Guide", href: "/blog/printing-cost-in-srinagar" },
+  { title: "Flex vs Vinyl Printing: Which is Better for Your Business?", href: "/blog/flex-vs-vinyl-printing" },
+  { title: "Top 10 Signage Ideas for Shops in Kashmir", href: "/blog/signage-ideas-shops-kashmir" },
+  { title: "Best Advertising Methods for Local Businesses in Srinagar", href: "/blog/advertising-methods-srinagar" },
+  { title: "How to Choose the Right Printing Service in Kashmir", href: "/blog/choosing-printing-service-kashmir" },
   { title: "Best printing services in Srinagar", href: "/blog/best-printing-services-srinagar" },
-  { title: "Flex printing cost in Kashmir", href: "/blog/flex-printing-cost-kashmir" },
   { title: "ACP vs flex boards", href: "/blog/acp-vs-flex-boards" },
   { title: "How to choose signage in Srinagar", href: "/blog/how-to-choose-signage-srinagar" },
   { title: "Branding tips for local businesses", href: "/blog/branding-tips-local-businesses" },

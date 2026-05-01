@@ -115,7 +115,7 @@ export const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-8 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
             >
-              MAP Advertisers is a leading printing press and branding studio based in Srinagar, offering high-quality flex printing, signage, ACP boards, hoardings, and complete brand identity solutions. With over 46 years of experience, we help businesses across Kashmir stand out with premium visual communication.
+              MAP Advertisers is a leading provider of printing, signage and branding services in Srinagar, Kashmir. We specialize in digital printing, flex printing, ACP boards, hoardings and custom branding solutions for businesses of all sizes. Whether you need high-quality banners, shop signage or complete brand identity, our team delivers precision and fast turnaround across Kashmir.
             </motion.p>
 
             <motion.div

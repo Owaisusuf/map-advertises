@@ -14,7 +14,7 @@ import ACPSignBoard from "./pages/services/ACPSignBoard";
 import HoardingPrinting from "./pages/services/HoardingPrinting";
 import BrandingAgency from "./pages/services/BrandingAgency";
 import LogoDesign from "./pages/services/LogoDesign";
-import SrinagarLocation from "./pages/locations/SrinagarLocation";
+import LocationPage from "./pages/locations/LocationPage";
 import FAQ from "./pages/FAQ";
 import BlogIndex from "./pages/blog/BlogIndex";
 import BestPrintingServices from "./pages/blog/BestPrintingServices";
@@ -26,6 +26,10 @@ import HoardingGuide from "./pages/blog/HoardingGuide";
 import BenefitsOfAcp from "./pages/blog/BenefitsOfAcp";
 import PrintingMistakes from "./pages/blog/PrintingMistakes";
 import OutdoorAdvertising from "./pages/blog/OutdoorAdvertising";
+import FlexVsVinyl from "./pages/blog/FlexVsVinyl";
+import SignageIdeas from "./pages/blog/SignageIdeas";
+import AdvertisingMethods from "./pages/blog/AdvertisingMethods";
+import ChoosingPrintingService from "./pages/blog/ChoosingPrintingService";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -44,19 +48,26 @@ const App = () => (
             <Route path="/printing-services-srinagar" element={<FlexPrinting />} />
             <Route path="/flex-printing-srinagar" element={<FlexPrinting />} />
             <Route path="/signage-services-srinagar" element={<SignageServices />} />
+            <Route path="/branding-services-srinagar" element={<BrandingAgency />} />
             <Route path="/acp-sign-board-srinagar" element={<ACPSignBoard />} />
             <Route path="/hoarding-printing-kashmir" element={<HoardingPrinting />} />
             <Route path="/branding-agency-kashmir" element={<BrandingAgency />} />
             <Route path="/logo-design-srinagar" element={<LogoDesign />} />
-            <Route path="/locations/srinagar" element={<SrinagarLocation />} />
-            <Route path="/locations/anantnag" element={<SrinagarLocation />} />
-            <Route path="/locations/baramulla" element={<SrinagarLocation />} />
+            
+            {/* Location Specific Service Pages */}
+            <Route path="/printing-services-kashmir" element={<LocationPage />} />
+            <Route path="/printing-services-anantnag" element={<LocationPage />} />
+            <Route path="/printing-services-baramulla" element={<LocationPage />} />
+            
+            <Route path="/locations/srinagar" element={<LocationPage />} />
+            <Route path="/locations/anantnag" element={<LocationPage />} />
+            <Route path="/locations/baramulla" element={<LocationPage />} />
             <Route path="/faqs-printing-srinagar" element={<FAQ />} />
             <Route path="/blog" element={<BlogIndex />} />
             
             {/* Blog Posts */}
             <Route path="/blog/best-printing-services-srinagar" element={<BestPrintingServices />} />
-            <Route path="/blog/flex-printing-cost-kashmir" element={<FlexPrintingCost />} />
+            <Route path="/blog/printing-cost-in-srinagar" element={<FlexPrintingCost />} />
             <Route path="/blog/acp-vs-flex-boards" element={<AcpVsFlex />} />
             <Route path="/blog/how-to-choose-signage-srinagar" element={<ChoosingSignage />} />
             <Route path="/blog/branding-tips-local-businesses" element={<BrandingTips />} />
@@ -64,6 +75,11 @@ const App = () => (
             <Route path="/blog/benefits-of-acp-boards" element={<BenefitsOfAcp />} />
             <Route path="/blog/printing-mistakes-to-avoid" element={<PrintingMistakes />} />
             <Route path="/blog/outdoor-advertising-kashmir" element={<OutdoorAdvertising />} />
+
+            <Route path="/blog/flex-vs-vinyl-printing" element={<FlexVsVinyl />} />
+            <Route path="/blog/signage-ideas-shops-kashmir" element={<SignageIdeas />} />
+            <Route path="/blog/advertising-methods-srinagar" element={<AdvertisingMethods />} />
+            <Route path="/blog/choosing-printing-service-kashmir" element={<ChoosingPrintingService />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

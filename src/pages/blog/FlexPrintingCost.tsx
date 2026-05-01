@@ -3,12 +3,12 @@ import { SEOPageLayout } from "@/components/layout/SEOPageLayout";
 const FlexPrintingCost = () => {
   return (
     <SEOPageLayout
-      title="Flex Printing Cost in Kashmir – Pricing Guide 2026 | MAP Advertisers"
-      description="Learn about the average cost of flex printing in Kashmir. Find pricing for banners, promotions, and event branding."
+      title="Printing Cost in Srinagar: Complete Price Guide | MAP Advertisers"
+      description="Find the latest printing costs in Srinagar for flex, banners, and signage. Complete price guide for businesses in Kashmir."
     >
       <div className="prose prose-invert lg:prose-xl max-w-none">
         <h1 className="text-4xl md:text-5xl font-display font-bold text-gradient-brand mb-8">
-          Flex Printing Cost in Kashmir – Pricing Guide 2026
+          Printing Cost in Srinagar: Complete Price Guide
         </h1>
         
         <p className="lead text-xl text-muted-foreground mb-8">

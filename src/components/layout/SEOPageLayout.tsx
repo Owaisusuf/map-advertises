@@ -28,6 +28,7 @@ export const SEOPageLayout: React.FC<SEOPageLayoutProps> = ({
         <title>{title}</title>
         {description && <meta name="description" content={description} />}
         {schema && <script type="application/ld+json">{schema}</script>}
+        <link rel="canonical" href={window.location.origin + window.location.pathname} />
       </Helmet>
 
       <Navbar />

@@ -22,3 +22,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Added by code-review-graph
+.code-review-graph/
+
+# AI Environment
+.claude/
+.kiro/
+.mcp.json
+.opencode.json
+.windsurfrules
+.cursorrules
+AGENTS.md
+CLAUDE.md
+GEMINI.md
