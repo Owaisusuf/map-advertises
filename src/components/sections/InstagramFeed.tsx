@@ -51,7 +51,7 @@ export const InstagramFeed = () => {
             transition={{ delay: 0.1 }}
             className="font-display text-4xl md:text-6xl font-bold tracking-tight mb-6"
           >
-            Follow our <span className="text-gradient-brand">Creative Journey</span>
+            See the <span className="text-gradient-brand">Art of Branding</span> <br className="hidden md:block" /> come to life.
           </motion.h2>
           
           <motion.p
@@ -61,8 +61,8 @@ export const InstagramFeed = () => {
             transition={{ delay: 0.2 }}
             className="text-muted-foreground text-lg max-w-2xl"
           >
-            Stay updated with our latest projects, behind-the-scenes moments, and 
-            signage transformations directly from our Instagram feed.
+            From giant highway hoardings to intricate office signage — watch our daily installs 
+            and behind-the-scenes magic directly from the floor.
           </motion.p>
         </div>
 
@@ -104,7 +104,7 @@ export const InstagramFeed = () => {
         <div className="mt-12 flex justify-center">
           <Button variant="outline" className="rounded-full border-white/10 hover:bg-white/5" asChild>
             <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-              Join 10k+ followers @mapadvertisers365
+              Watch the Craft in Action — Follow @mapadvertisers365
             </a>
           </Button>
         </div>
