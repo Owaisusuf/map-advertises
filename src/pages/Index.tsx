@@ -12,6 +12,7 @@ import { About } from "@/components/sections/About";
 import { Catalog } from "@/components/sections/Catalog";
 import { Contact } from "@/components/sections/Contact";
 import { InstagramReels } from "@/components/sections/InstagramReels";
+import { InstagramFeed } from "@/components/sections/InstagramFeed";
 import { SEOSection } from "@/components/sections/SEOSection";
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
       <Services />
       <Showcase />
       <InstagramReels />
+      <InstagramFeed />
       <About />
       <WhyUs />
       <GoogleReviews />
