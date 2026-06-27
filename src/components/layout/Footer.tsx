@@ -85,9 +85,14 @@ export const Footer = () => {
             <h4 className="font-display font-semibold mb-4">Sub-brands</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="https://www.instagram.com/tohfaagifts/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
-                  Tohfaa — Merchandise
-                </a>
+                <div className="flex flex-col gap-1">
+                  <span className="text-foreground font-medium">Tohfaa — Merchandise</span>
+                  <div className="flex items-center gap-2 text-xs">
+                    <a href="/tohfaa.html" className="text-muted-foreground hover:text-foreground hover:underline transition-colors">Website</a>
+                    <span className="text-muted-foreground/30">•</span>
+                    <a href="https://www.instagram.com/tohfaagifts/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground hover:underline transition-colors">Instagram</a>
+                  </div>
+                </div>
               </li>
               <li>
                 <a href="https://www.instagram.com/smv.studios/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">

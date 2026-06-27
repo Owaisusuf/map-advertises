@@ -19,6 +19,42 @@ const navItems = [
       { label: "Logo Design", href: "/logo-design-srinagar" },
     ]
   },
+  {
+    label: "Sub-brands",
+    items: [
+      {
+        href: "/tohfaa.html",
+        customRender: (
+          <div className="flex flex-col gap-1 px-3 py-2 hover:bg-white/5 rounded-lg text-left">
+            <span className="text-[11px] font-semibold text-foreground/50 uppercase tracking-wider">Tohfaa — Merchandise</span>
+            <div className="flex items-center gap-3 mt-0.5">
+              <a href="/tohfaa.html" className="text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors">Website</a>
+              <span className="text-muted-foreground/30">•</span>
+              <a href="https://www.instagram.com/tohfaagifts/" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
+            </div>
+          </div>
+        )
+      },
+      {
+        href: "https://www.instagram.com/smv.studios/",
+        customRender: (
+          <a href="https://www.instagram.com/smv.studios/" target="_blank" rel="noopener noreferrer" className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-white/10 rounded-lg transition-colors block text-left">
+            <span className="text-[11px] font-semibold text-foreground/50 uppercase tracking-wider block mb-0.5">SMV Studios</span>
+            <span className="block text-xs font-semibold text-muted-foreground hover:text-foreground">Media Services</span>
+          </a>
+        )
+      },
+      {
+        href: "#web-studio",
+        customRender: (
+          <div className="px-3 py-2 rounded-lg cursor-default text-left">
+            <span className="text-[11px] font-semibold text-foreground/50 uppercase tracking-wider block mb-0.5">MAP Web Studio</span>
+            <span className="block text-xs font-semibold text-muted-foreground/50">Web Development</span>
+          </div>
+        )
+      }
+    ]
+  },
   { label: "Work", href: "/#work" },
   { label: "Blog", href: "/blog" },
   { label: "FAQs", href: "/faqs-printing-srinagar" },
@@ -74,15 +110,21 @@ export const Navbar = () => {
                     </button>
                     {/* The pt-4 creates a seamless bridge for the mouse hover */}
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 pointer-events-none -translate-y-4 group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 z-[100]">
-                      <div className="flex flex-col gap-1 w-[200px] p-2 rounded-xl bg-background border border-border shadow-2xl shadow-black/50">
-                        {item.items.map((subItem) => (
-                          <Link
-                            key={subItem.href}
-                            to={subItem.href}
-                            className="px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-white/10 rounded-lg transition-colors"
-                          >
-                            {subItem.label}
-                          </Link>
+                      <div className="flex flex-col gap-1 w-[220px] p-2 rounded-xl bg-background border border-border shadow-2xl shadow-black/50">
+                        {item.items.map((subItem, idx) => (
+                          subItem.customRender ? (
+                            <div key={idx}>
+                              {subItem.customRender}
+                            </div>
+                          ) : (
+                            <Link
+                              key={subItem.href}
+                              to={subItem.href}
+                              className="px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-white/10 rounded-lg transition-colors"
+                            >
+                              {subItem.label}
+                            </Link>
+                          )
                         ))}
                       </div>
                     </div>
@@ -127,15 +169,21 @@ export const Navbar = () => {
                   <>
                     <div className="px-3 py-2 text-sm font-semibold text-foreground border-b border-white/5">{item.label}</div>
                     <div className="flex flex-col pl-4 gap-1">
-                      {item.items.map((subItem) => (
-                        <Link
-                          key={subItem.href}
-                          to={subItem.href}
-                          onClick={() => setOpen(false)}
-                          className="px-3 py-2 rounded-lg hover:bg-white/5 text-sm text-muted-foreground"
-                        >
-                          {subItem.label}
-                        </Link>
+                      {item.items.map((subItem, idx) => (
+                        subItem.customRender ? (
+                          <div key={idx} onClick={() => setOpen(false)}>
+                            {subItem.customRender}
+                          </div>
+                        ) : (
+                          <Link
+                            key={subItem.href}
+                            to={subItem.href}
+                            onClick={() => setOpen(false)}
+                            className="px-3 py-2 rounded-lg hover:bg-white/5 text-sm text-muted-foreground"
+                          >
+                            {subItem.label}
+                          </Link>
+                        )
                       ))}
                     </div>
                   </>
