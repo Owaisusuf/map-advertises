@@ -104,7 +104,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="pt-8 border-t border-border/60 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} MAP Advertisers. All rights reserved. | <span className="font-medium text-foreground/80">Made by owaisusuf</span></p>
+          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} MAP Advertisers. All rights reserved. | <span className="font-medium text-foreground/80">Made by <a href="https://wa.me/9149691391?text=Hi%2C%20I%20saw%20your%20work%20on%20MAP%20Advertisers%20and%20I%20want%20a%20website%20like%20that!" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">owaisusuf</a></span></p>
           <div className="flex items-center gap-6 text-xs text-muted-foreground">
             <a href="#" className="hover:text-foreground">Privacy</a>
             <a href="#" className="hover:text-foreground">Terms</a>
